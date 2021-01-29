@@ -1,0 +1,21 @@
+<div class="subscribe-block">
+    <h2>newsletter</h2>
+    <form action="{% url 'index_page' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-solid">subscribe</button>
+        </div>
+    </form>
+</div>
+
+
+{% comment %} <h1>{{ form }}</h1> {% endcomment %}
+
+    {% comment %} <form>
+        <div class="form-group">
+            <input type="text" class="form-control" id="exampleFormControlInput3"
+                placeholder="Enter your email">
+            <button type="submit" class="btn btn-solid">subscribe</button>
+        </div>
+    </form> {% endcomment %}
